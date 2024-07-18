@@ -7,6 +7,9 @@
 header{
     background-image: linear-gradient(#111111,#777777);
 }
+.logo a{
+    color: rgba(230, 83, 60, 1);
+}
 .btn-primary{
     background-color: rgba(230, 83, 60, 1);
     border-radius: 40px;
@@ -39,6 +42,9 @@ nav{
 .hero-content{
     width: 40%;
 }
+.hero-img{
+    position: relative;
+}
 .hero-content h2{
     margin-top: 90px;
     font-weight: bold;
@@ -69,4 +75,72 @@ nav{
     border-radius: 40px;
     padding: 16px 40px;
     color: white;
+}
+.hero-box1{
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    display: flex;
+    color: white;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* opacity: 0.1; */
+    padding: 20px;
+}
+.workout h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.hero-box{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    color: white;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* opacity: 0.1; */
+    padding: 20px;
+}
+.ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(230, 83, 60, 1);
+}
+.ball-content{
+    color: #fff;
+}
+.menu-icon{
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
+@media screen and (max-width: 576px ) {
+    .menu-items ul{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        text-align: right;
+    }
+    .hero-row{
+        flex-direction: column;
+    }
+    .hero-content{
+        width: 90%;
+    }
+    .join,.btn-secondary{
+        padding: 16px 20px;
+    }
+    .btn-container{
+        text-align: center;
+    }
+    .hero-box{
+        bottom: 240px;
+        left: 30px;
+    }
+    .hero-content,.logo a{
+        margin-left: 20px;
+    }
 }
