@@ -219,6 +219,64 @@ nav {
     padding: 30px;
     border-radius: 40px;
 }
+/* .team-section{
+    width: 80%;
+    margin: 0 auto;
+} */
+ .team-section{
+    margin-top: 88px;
+ }
+.team-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.team-container h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.team-container p{
+    margin-bottom: 40px;
+}
+.trainer{
+    position: relative;
+}
+.trainer img{
+    width: 100%;
+    height: 100%;
+}
+.trainer h5{
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    font-size: 1.5rem;
+}
+.trainer p{
+    position: absolute;
+    bottom: -20px;
+    left: 25px;
+    font-size: 0.8rem;
+    color: #777777;
+}
+/* .trainer h5{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+} */
+.team-trainers{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #777777;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+/* footer style start here */
+.footer{
+    margin-top: 88px;
+    width: 80%;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 576px) {
     .menu-items ul {
@@ -276,5 +334,8 @@ nav {
     }
     .run-img {
         width: 100%;
+    }
+    .team-trainers{
+        grid-template-columns: auto;
     }
 }
