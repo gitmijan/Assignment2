@@ -257,6 +257,9 @@ nav {
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 34px;
 }
+.bmi-right-side form .row1{
+    line-height: 4;
+}
 .bmi-right-side form .row1 input{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 12px 40px 12px 20px;
@@ -284,7 +287,26 @@ nav {
     border-radius: 8px;
     margin: 12px 0;
 }
+.cal-btn{
+    margin-bottom: 12px;
+    color: white;
+    padding: 16px 48px;
+    border-radius: 40px;
+    background-color: rgba(230, 83, 60, 1);
+}
 
+/* healthy food style here  */
+.healthy{
+    display: flex;
+    align-items: center;
+}
+.healthy .heathy-text p{
+    margin-top: 20px;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+.healthy-image img{
+    width: 100%;
+}
 /* team section style here */
  .team-section{
     margin-top: 88px;
@@ -364,6 +386,7 @@ nav {
     color: rgba(255, 255, 255, 0.5);
 }
 
+
 @media screen and (max-width: 576px) {
     .menu-items ul {
         display: none;
@@ -420,6 +443,12 @@ nav {
     }
     .run-img {
         width: 100%;
+    }
+    .bmi-container{
+        flex-direction: column;
+    }
+    .healthy{
+        flex-direction: column;
     }
     .team-trainers{
         grid-template-columns: auto;
